@@ -10,10 +10,15 @@ header{
 }
 
 main{
-    width:100%;
+    width:45%;
     height: 100vh;
     float: left;
     margin-right: 20;
+}
+aside{
+    float: left;
+    width: 45%;
+    height: 100vh;
 }
 
 footer{
