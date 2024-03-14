@@ -11,7 +11,7 @@ header{
 
 main{
     width: 57%;
-    height: 100vh;
+    height: 100%;
     float: left;
     margin-left: 10;
     margin-right: 10;
@@ -20,7 +20,7 @@ main{
 aside{
     float: left;
     width: 20%;
-    height: 100vh;
+    height: 100%;
 }
 
 footer{
