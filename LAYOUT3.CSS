@@ -1,21 +1,35 @@
 .borderLine{
     border: 1px solid skyblue;
     margin-top: 10px;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: none;
+    justify-content: center;
+    font-size: 1em;
+}
+
+header, main, footer, nav{
+    display: flex;
+    padding: 1em;
 }
 
 header{
-    
-    width: 100%;
+    max-width: 100%;
     height: 100px;
 }
 
 main{
-    width: 57%;
+    width: 50%;
     height: 100vh;
     float: left;
     margin-left: 10;
     margin-right: 10;
 }
+
 
 aside{
     float: left;
@@ -27,4 +41,13 @@ footer{
     width: 100%;
     height: 100px;
     float: left;
+}
+@media (max-width: none){
+    aside.aside-left,
+    aside.aside-right {
+        display: none;
+    }
+    main{
+        flex: 2;
+    }
 }

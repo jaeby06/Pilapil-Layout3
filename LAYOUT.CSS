@@ -1,15 +1,17 @@
 .borderLine{
+    display: flex;
     border: 1px solid skyblue;
     margin-top: 10px;
 }
 
 header{
-    
+    display: flex;
     width: 100%;
     height: 100px;
 }
 
 main{
+    display: flex;
     width:100%;
     height: 100vh;
     float: left;
@@ -17,6 +19,7 @@ main{
 }
 
 footer{
+    display: flex;
     width: 100%;
     height: 100px;
     float: left;
