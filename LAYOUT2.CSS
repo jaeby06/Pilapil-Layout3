@@ -3,42 +3,43 @@
     margin-top: 10px;
 }
 .container {
-    display: flex; 
+    display: flex;
+    flex-wrap: wrap;
+    margin:5px;
+    justify-content: center;
+    font-size: 1em;
 }
 
 header, nav, main, aside, footer {
     flex: 1; 
-    margin: 5px;
+    margin: 1%;
 }
 
-header{
-    
+header{ 
     width: 100%;
     height: 100px;
 }
 
 main{
     float: left;
-    width:49%;
+    width:45%;
     height: 100%;
 }
 aside{
     float: left;
-    width: 49%;
+    width: 45%;
     height: 100%;
 }
-
 footer{
     float: left;
     width: 100%;
     height: 100px;
 }
-@media (max-width:500px) {
+@media (max-width:300px) {
     aside.aside-left{
         display: none; 
     }
-
     main {
-        flex: 2; 
+        flex:  2 100%;
     }
 }

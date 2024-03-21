@@ -6,14 +6,14 @@
 .container{
     display: flex;
     flex-wrap: wrap;
-    margin:5px;
     justify-content: center;
     font-size: 1em;
 }
 
-header, main, footer, nav{
+header, main, footer, aside, nav{
     display: flex;
     padding: 1em;
+    margin-left: 1%;
 }
 
 header{
@@ -24,16 +24,14 @@ header{
 main{
     width: 50%;
     height: 100vh;
-    width: 57%;
-    height: 100%;
     float: left;
 }
 
 
 aside{
     float: left;
-    width: 20%;
-    height: 100%;
+    width: 22%;
+    height: 100vh;
 }
 
 footer{
@@ -41,12 +39,13 @@ footer{
     height: 100px;
     float: left;
 }
-@media (max-width: none){
+@media (max-width: 300px){
     aside.aside-left,
     aside.aside-right {
         display: none;
+        justify-content: center;
     }
     main{
-        flex: 2;
+        flex: 2 100%;;
     }
 }
